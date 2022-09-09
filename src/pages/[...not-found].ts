@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 
 @Component({
   template: `
-    <p>global not found works!</p>
+    <h1>Page Not Found</h1>
   `,
   standalone: true
 })

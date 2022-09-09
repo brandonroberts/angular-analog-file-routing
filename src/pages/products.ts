@@ -3,7 +3,7 @@ import { RouterOutlet } from '@angular/router';
 
 @Component({
   template: `
-    <p>products works!</p>
+    <h1>Products</h1>
 
     <router-outlet></router-outlet>
   `,

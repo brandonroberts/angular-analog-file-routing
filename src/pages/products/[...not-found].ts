@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 
 @Component({
   template: `
-    <p>products not found works!</p>
+    <h2>Products Page Not Found</h2>
   `,
   standalone: true
 })

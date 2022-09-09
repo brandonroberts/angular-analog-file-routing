@@ -8,7 +8,7 @@ function useActivateRoute(): ActivatedRoute {
 
 @Component({
   template: `
-    <p>productid works!</p>
+    <h2>Product Details</h2>
 
     Params: {{ params$ | async | json }}
   `,

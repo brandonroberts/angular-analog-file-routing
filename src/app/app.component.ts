@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { RouterLinkWithHref, RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
+  imports: [RouterOutlet, RouterLinkWithHref],
   template: `
     <div>
       <a href="https://vitejs.dev" target="_blank">
@@ -35,6 +35,13 @@ import { RouterOutlet } from '@angular/router';
     <p class="read-the-docs">
       Click on the Vite and Angular logos to learn more.
     </p>
+
+    <a [routerLink]="['/']">Home</a> | 
+    <a [routerLink]="['/about']">About</a> | 
+    <a [routerLink]="['/products']">Products w/Wildcard Route</a> | 
+    <a [routerLink]="['/products/new']">New Product</a> | 
+    <a [routerLink]="['/products/1']">Products w/ID</a> | 
+    <a [routerLink]="['/bad']">Invalid Route</a>    
 
     <router-outlet></router-outlet>
   `,

@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 
 @Component({
   template: `
-    <p>home works!</p>
+    <h1>Home</h1>
   `,
   standalone: true
 })
