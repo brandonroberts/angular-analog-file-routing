@@ -12,6 +12,6 @@ if (import.meta.env.PROD) {
 
 bootstrapApplication(AppComponent, {
   providers: [
-    provideRouter(routes())
+    provideRouter(routes)
   ]
 });
