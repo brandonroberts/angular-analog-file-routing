@@ -1,8 +1,10 @@
 import { Component } from '@angular/core';
+import { RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-root',
   standalone: true,
+  imports: [RouterOutlet],
   template: `
     <div>
       <a href="https://vitejs.dev" target="_blank">
@@ -33,6 +35,8 @@ import { Component } from '@angular/core';
     <p class="read-the-docs">
       Click on the Vite and Angular logos to learn more.
     </p>
+
+    <router-outlet></router-outlet>
   `,
   styles: [
     `
